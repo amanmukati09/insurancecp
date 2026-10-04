@@ -1,0 +1,78 @@
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Approving settlement for claimId=503, approvedBy=supervisor2
+2026-10-03 16:58:59 [main] WARN  c.i.s.impl.SettlementServiceImpl - Settlement approval failed for claimId=503, errorMessage=A Settlement already exists for this Claim
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Approving settlement for claimId=502, approvedBy=supervisor1
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement approved for claimId=502, newSettlementId=900
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Calculating settlement for claimId=500
+2026-10-03 16:58:59 [main] DEBUG c.i.s.impl.SettlementServiceImpl - No Claim found for claimId=500; skipping region/policy handling rule lookup
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement calculated for claimId=500, payoutAmount=12000.00
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Calculating settlement for claimId=501
+2026-10-03 16:58:59 [main] DEBUG c.i.s.impl.SettlementServiceImpl - Region/policy handling rule for claimId=501: settlementRoundingRule=NEAREST_CENT
+2026-10-03 16:58:59 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement calculated for claimId=501, payoutAmount=3000.00
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition attempted for claimId=200, newStatus=Investigating, changedBy=adjuster1, expectedVersion=1
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition succeeded for claimId=200, newStatus=Investigating
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim creation attempted for claimantId=10, policyReferenceId=20, lossDate=Sat Oct 03 16:58:59 UTC 2026
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim created successfully: claimId=100, claimReferenceCode=CLM-000100
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Adjuster assignment attempted for claimId=300, newAdjusterId=55, changedBy=supervisor1
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Adjuster assignment succeeded for claimId=300, newAdjusterId=55
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition attempted for claimId=201, newStatus=Settled, changedBy=adjuster2, expectedVersion=3
+2026-10-03 16:58:59 [main] WARN  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition failed for claimId=201, newStatus=Settled, errorMessage=Invalid status transition from Open to Settled
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim creation attempted for claimantId=11, policyReferenceId=21, lossDate=Sat Oct 03 16:58:59 UTC 2026
+2026-10-03 16:58:59 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim created successfully: claimId=101, claimReferenceCode=CLM-000101
+2026-10-03 16:58:59 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set attempted for claimId=101, amount=-1.00, changedBy=adjuster2
+2026-10-03 16:58:59 [main] WARN  c.i.service.impl.ReserveServiceImpl - Reserve set failed for claimId=101, amount=-1.00, errorMessage=Reserve amount must be non-negative
+2026-10-03 16:58:59 [main] INFO  c.i.service.impl.ReserveServiceImpl - Recalculating recommended reserve from damage assessments for claimId=102
+2026-10-03 16:58:59 [main] INFO  c.i.service.impl.ReserveServiceImpl - Recalculated recommended reserve for claimId=102 to 7500.50
+2026-10-03 16:58:59 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set attempted for claimId=100, amount=5000.00, changedBy=adjuster1
+2026-10-03 16:58:59 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set succeeded for claimId=100, newAmount=5000.00
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Approving settlement for claimId=503, approvedBy=supervisor2
+2026-10-03 16:59:21 [main] WARN  c.i.s.impl.SettlementServiceImpl - Settlement approval failed for claimId=503, errorMessage=A Settlement already exists for this Claim
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Approving settlement for claimId=502, approvedBy=supervisor1
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement approved for claimId=502, newSettlementId=900
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Calculating settlement for claimId=500
+2026-10-03 16:59:21 [main] DEBUG c.i.s.impl.SettlementServiceImpl - No Claim found for claimId=500; skipping region/policy handling rule lookup
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement calculated for claimId=500, payoutAmount=12000.00
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Calculating settlement for claimId=501
+2026-10-03 16:59:21 [main] DEBUG c.i.s.impl.SettlementServiceImpl - Region/policy handling rule for claimId=501: settlementRoundingRule=NEAREST_CENT
+2026-10-03 16:59:21 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement calculated for claimId=501, payoutAmount=3000.00
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition attempted for claimId=200, newStatus=Investigating, changedBy=adjuster1, expectedVersion=1
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition succeeded for claimId=200, newStatus=Investigating
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim creation attempted for claimantId=10, policyReferenceId=20, lossDate=Sat Oct 03 16:59:21 UTC 2026
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim created successfully: claimId=100, claimReferenceCode=CLM-000100
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Adjuster assignment attempted for claimId=300, newAdjusterId=55, changedBy=supervisor1
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Adjuster assignment succeeded for claimId=300, newAdjusterId=55
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition attempted for claimId=201, newStatus=Settled, changedBy=adjuster2, expectedVersion=3
+2026-10-03 16:59:21 [main] WARN  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition failed for claimId=201, newStatus=Settled, errorMessage=Invalid status transition from Open to Settled
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim creation attempted for claimantId=11, policyReferenceId=21, lossDate=Sat Oct 03 16:59:21 UTC 2026
+2026-10-03 16:59:21 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim created successfully: claimId=101, claimReferenceCode=CLM-000101
+2026-10-03 16:59:21 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set attempted for claimId=101, amount=-1.00, changedBy=adjuster2
+2026-10-03 16:59:21 [main] WARN  c.i.service.impl.ReserveServiceImpl - Reserve set failed for claimId=101, amount=-1.00, errorMessage=Reserve amount must be non-negative
+2026-10-03 16:59:21 [main] INFO  c.i.service.impl.ReserveServiceImpl - Recalculating recommended reserve from damage assessments for claimId=102
+2026-10-03 16:59:21 [main] INFO  c.i.service.impl.ReserveServiceImpl - Recalculated recommended reserve for claimId=102 to 7500.50
+2026-10-03 16:59:21 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set attempted for claimId=100, amount=5000.00, changedBy=adjuster1
+2026-10-03 16:59:21 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set succeeded for claimId=100, newAmount=5000.00
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Approving settlement for claimId=503, approvedBy=supervisor2
+2026-10-03 17:00:10 [main] WARN  c.i.s.impl.SettlementServiceImpl - Settlement approval failed for claimId=503, errorMessage=A Settlement already exists for this Claim
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Approving settlement for claimId=502, approvedBy=supervisor1
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement approved for claimId=502, newSettlementId=900
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Calculating settlement for claimId=500
+2026-10-03 17:00:10 [main] DEBUG c.i.s.impl.SettlementServiceImpl - No Claim found for claimId=500; skipping region/policy handling rule lookup
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement calculated for claimId=500, payoutAmount=12000.00
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Calculating settlement for claimId=501
+2026-10-03 17:00:10 [main] DEBUG c.i.s.impl.SettlementServiceImpl - Region/policy handling rule for claimId=501: settlementRoundingRule=NEAREST_CENT
+2026-10-03 17:00:10 [main] INFO  c.i.s.impl.SettlementServiceImpl - Settlement calculated for claimId=501, payoutAmount=3000.00
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition attempted for claimId=200, newStatus=Investigating, changedBy=adjuster1, expectedVersion=1
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition succeeded for claimId=200, newStatus=Investigating
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim creation attempted for claimantId=10, policyReferenceId=20, lossDate=Sat Oct 03 17:00:10 UTC 2026
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim created successfully: claimId=100, claimReferenceCode=CLM-000100
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Adjuster assignment attempted for claimId=300, newAdjusterId=55, changedBy=supervisor1
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Adjuster assignment succeeded for claimId=300, newAdjusterId=55
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition attempted for claimId=201, newStatus=Settled, changedBy=adjuster2, expectedVersion=3
+2026-10-03 17:00:10 [main] WARN  c.i.s.i.ClaimsLifecycleServiceImpl - Status transition failed for claimId=201, newStatus=Settled, errorMessage=Invalid status transition from Open to Settled
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim creation attempted for claimantId=11, policyReferenceId=21, lossDate=Sat Oct 03 17:00:10 UTC 2026
+2026-10-03 17:00:10 [main] INFO  c.i.s.i.ClaimsLifecycleServiceImpl - FNOL claim created successfully: claimId=101, claimReferenceCode=CLM-000101
+2026-10-03 17:00:10 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set attempted for claimId=101, amount=-1.00, changedBy=adjuster2
+2026-10-03 17:00:10 [main] WARN  c.i.service.impl.ReserveServiceImpl - Reserve set failed for claimId=101, amount=-1.00, errorMessage=Reserve amount must be non-negative
+2026-10-03 17:00:10 [main] INFO  c.i.service.impl.ReserveServiceImpl - Recalculating recommended reserve from damage assessments for claimId=102
+2026-10-03 17:00:10 [main] INFO  c.i.service.impl.ReserveServiceImpl - Recalculated recommended reserve for claimId=102 to 7500.50
+2026-10-03 17:00:10 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set attempted for claimId=100, amount=5000.00, changedBy=adjuster1
+2026-10-03 17:00:10 [main] INFO  c.i.service.impl.ReserveServiceImpl - Reserve set succeeded for claimId=100, newAmount=5000.00

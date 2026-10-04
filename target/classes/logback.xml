@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="false">
+
+    <!-- Console appender: human-readable pattern for interactive/dev visibility -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Rolling file appender: writes to logs/icps.log, relative to Tomcat's working directory
+         (CATALINA_BASE). This relative-path convention is chosen over an absolute path like
+         /opt/tomcat9/logs/icps.log because it is portable across environments/installations
+         and is the typical convention for a WAR deployed into any Tomcat instance. -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/opt/tomcat9/logs/icps.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- Daily rotation, additionally split by size; %i disambiguates multiple files per day -->
+            <fileNamePattern>/opt/tomcat9/logs/icps.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>14</maxHistory>
+            <totalSizeCap>500MB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Application-specific logger: more verbose than root to aid debugging of ICPS business logic.
+         Inherits root's CONSOLE + FILE appenders via additivity, no dedicated appender needed. -->
+    <logger name="com.icps" level="DEBUG" additivity="true" />
+
+    <!-- Quiet down noisy framework loggers to keep logs readable -->
+    <logger name="org.springframework" level="INFO" />
+    <logger name="org.hibernate" level="WARN" />
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>

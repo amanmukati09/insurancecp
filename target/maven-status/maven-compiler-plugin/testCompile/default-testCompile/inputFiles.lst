@@ -1,0 +1,4 @@
+/home/ec2-user/icps/src/test/java/com/icps/service/SettlementServiceTest.java
+/home/ec2-user/icps/src/test/java/com/icps/service/ReserveServiceTest.java
+/home/ec2-user/icps/src/test/java/com/icps/service/ClaimsLifecycleServiceTest.java
+/home/ec2-user/icps/src/test/java/com/icps/service/ClaimStatusEnumerationTest.java

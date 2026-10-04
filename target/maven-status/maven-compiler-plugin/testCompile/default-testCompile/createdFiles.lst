@@ -1,0 +1,4 @@
+com/icps/service/ReserveServiceTest.class
+com/icps/service/ClaimStatusEnumerationTest.class
+com/icps/service/SettlementServiceTest.class
+com/icps/service/ClaimsLifecycleServiceTest.class
